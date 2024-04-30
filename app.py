@@ -79,5 +79,3 @@ else:
         elif isinstance(message, HumanMessage):
             with st.chat_message("Human"):
                 st.write(message.content)
-
-#pip install sentence-transformers

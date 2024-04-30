@@ -21,12 +21,11 @@ streamlit run app.py
 # CHATBOT 5 (FOR MAC) USING CONDA
 ## Step 1: 
 ```
-    conda create --name chatbot  python=3.10
+conda create --name chatbot  python=3.10
 ```
 ## Step 2
 ```
-    
-    conda activate chatbot 
+conda activate chatbot 
 ```
 ## Step 3:
 ```
