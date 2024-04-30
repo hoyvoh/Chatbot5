@@ -72,10 +72,12 @@ else:
         if isinstance(message, AIMessage):
             with st.chat_message("AI"):
                 if message == st.session_state.chat_history[0]:
-                    st.image(r".\icon\OIP.ico", caption=r"iRobin")
+                    st.image(r"./icon/OIP.ico", caption=r"iRobin")
                 else: 
-                    st.image(r".\icon\89a98bb21a59482af84118874509086a.jpg", width=250, caption=r"iRobin")
+                    st.image(r"./icon/89a98bb21a59482af84118874509086a.jpg", width=250, caption=r"iRobin")
                 st.write(message.content)
         elif isinstance(message, HumanMessage):
             with st.chat_message("Human"):
                 st.write(message.content)
+
+#pip install sentence-transformers
