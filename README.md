@@ -1,34 +1,38 @@
 # Chatbot5
-The 5th version of the chatbot but I want it separated from the other 
+This is a simple RAG implementation with model/transformers context (see the code for more details).
 
-First, you need to put the icons to a folder in the same directory with the name "icon".
+## First, you need to put the icons to a folder in the same directory with the name "icon".
 
-These are steps to run for Windows pip only.
+# For Windows
 ## Step 1:
-```
+```terminal
 vscode-user@terminal> python -m venv env 
 ```
 
 ## Step 2:
-```
+```terminal
 !pip install -r requirements.txt
 ```
 
 ## Step 3:
-```
+```terminal
 streamlit run app.py
 ```
-# CHATBOT 5 (FOR MAC) USING CONDA
+
+# FOR MAC USING CONDA
+### Note: You should install Xcode before (because you need to have Xcode installed on your system in order to proceed with the installation or compilation of certain software packages or libraries.)
 ## Step 1: 
-```
+```terminal
 conda create --name chatbot  python=3.10
 ```
+
 ## Step 2
-```
+```terminal
 conda activate chatbot 
 ```
+
 ## Step 3:
-```
+```terminal
 pip install sentence-transformers==2.2.1 install -r requirementsformac.txt
 ```
 
@@ -37,4 +41,4 @@ pip install sentence-transformers==2.2.1 install -r requirementsformac.txt
 streamlit run app.py
 ```
 
-## Note: You should install Xcode before (because you need to have Xcode installed on your system in order to proceed with the installation or compilation of certain software packages or libraries.)
+
