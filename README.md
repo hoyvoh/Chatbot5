@@ -5,39 +5,39 @@ This is a simple RAG implementation with model/transformers context (see the cod
 
 # For Windows
 ## Step 1:
-```terminal
-vscode-user@terminal> python -m venv env 
+```shell
+python -m venv env 
 ```
 
 ## Step 2:
-```terminal
+```shell
 !pip install -r requirements.txt
 ```
 
 ## Step 3:
-```terminal
+```shell
 streamlit run app.py
 ```
 
 # FOR MAC USING CONDA
 ### Note: You should install Xcode before (because you need to have Xcode installed on your system in order to proceed with the installation or compilation of certain software packages or libraries.)
 ## Step 1: 
-```terminal
+``` terminal
 conda create --name chatbot  python=3.10
 ```
 
 ## Step 2
-```terminal
+``` terminal
 conda activate chatbot 
 ```
 
 ## Step 3:
-```terminal
+``` terminal
 pip install sentence-transformers==2.2.1 install -r requirementsformac.txt
 ```
 
 ## Step 4:
-```
+``` shell
 streamlit run app.py
 ```
 
