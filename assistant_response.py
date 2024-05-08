@@ -50,7 +50,6 @@ def keyword_store():
     vector_store = FAISS.from_texts(context, embeddings)
     return vector_store
 
-
 def keyword_search(query, vector_store):
     retriever = vector_store.as_retriever()
     results = retriever.invoke(query)
@@ -103,7 +102,7 @@ def get_ans_from_api(user_query, context):
     "model": "{}".format(model_name),
     "messages": [
         {"role":"system",
-        "content": "You are a friendly assistant to a student. Use the following information to answer the user's question.In case you don't know the answer, just say that you don't know, don't try to make up an answer. Related information for you: {}".format(context)},
+        "content": "You are iRobin, a friendly assistant to a student. Use the following information to answer the user's question. In case you don't know the answer, just say that you don't know, don't try to make up an answer. Related information for you: {}".format(context)},
         {"role": "user",
         "content": "{}".format(user_query)}
         ]
@@ -119,7 +118,6 @@ def get_ans_from_api(user_query, context):
     print("Answer is returned at get_ans_from_api after {}s".format(end-start))
     print(result)
     return result
-
 
 def get_response(query, need_context):
     start = time.time()
