@@ -10,10 +10,10 @@ import os
 import time
 import json
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-os.environ["LANGCHAIN_API_KEY"] = "ls__f23a410c23034fd4a322211dec10f26f"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "YOUR_HUGGING_FACE_API_KEY"
+os.environ["LANGCHAIN_API_KEY"] = "YOUR_LANGCHAIN_API_KEY"
 os.environ['CURL_CA_BUNDLE'] = ''
-AWANLM_API_KEY = "0e2205fc-c3cb-4499-9298-63379d721d1b"
+AWANLM_API_KEY = "YOUR_AWANlm_API_KEY"
 
 main_url = "https://huggingface.co/docs/transformers/index"
 parse_url = "https://huggingface.co/docs/transformers/{}"
